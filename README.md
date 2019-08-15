@@ -2,8 +2,6 @@
 
 Este es un ejemplo de una aplicacion beacon, detecta de forma simulada beacons.
 
-If you are looking for an Eclipse reference project, see the eclipse branch.
-
 ## Project Setup
 
 1. [Install Gradle](http://www.gradle.org/installation) version 2.12
