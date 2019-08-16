@@ -1,8 +1,18 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MonitoringActivity" >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fondounir"
+        android:visibility="visible" />
+
     <TextView
         android:id="@+id/textView1"
         android:layout_width="wrap_content"
@@ -18,6 +28,8 @@
         android:layout_height="wrap_content"
         android:layout_below="@+id/textView1"
         android:layout_alignParentLeft="true"
+        android:layout_marginLeft="54dp"
+        android:layout_marginTop="0dp"
         android:onClick="onRangingClicked"
         android:text="Comenzar detección de beacons" />
 
@@ -26,22 +38,22 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/Button01"
+        android:layout_marginTop="15dp"
         android:text="Tipo de evento:"
-        android:layout_marginTop="17dp"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/txt_tipo_evento"
-        >
+        android:layout_marginTop="0dp">
 
         <RadioButton
             android:id="@+id/radio_notificacion"
             android:layout_width="wrap_content"
-            android:checked="true"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
+            android:checked="true"
             android:text="Notificación" />
 
         <RadioButton
@@ -64,7 +76,6 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
             android:text="Abrir sitio web" />
-
 
 
     </RadioGroup>
